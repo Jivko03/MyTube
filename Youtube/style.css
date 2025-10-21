@@ -14,9 +14,30 @@ body
 }
 #title, #logo
 {
-    float:left; display:inline; margin: 9px 10px 25px 20px;
+    float:left; display:inline; margin: 9px 20px 25px 20px;
 }
-#search-bar,#searchbtn
+#search-bar
 {
     display:inline-block; margin: auto;
+    padding: 0;
+    height: 3vh;
+    position: relative;
+    left: 0;
+    outline: none;
+    border: 0.2rem solid #89cff0;
+    border-color: #89cff0;
+    border-radius: 50px;
+    font-size: 16px;
+
+}
+#seach-btn
+{
+    display:inline-block; margin: auto;
+    background-color: #89cff0;
+    color: white;
+    padding: 10px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
 }
