@@ -15,12 +15,16 @@ body
 #title, #logo
 {
     float:left; display:inline; margin: 9px 20px 25px 20px;
+    height: 20vh;
+    width: auto;
+    font-size: 4em;
 }
 #search-bar
 {
     display:inline-block; margin: auto;
     padding: 0;
-    height: 3vh;
+    height: 7vh;
+    width: 40vw;
     position: relative;
     left: 0;
     outline: none;
@@ -34,10 +38,50 @@ body
 {
     display:inline-block; margin: auto;
     background-color: #89cff0;
+    height: 8vh;
+    width: 7vw;
     color: white;
     padding: 10px;
     margin: 8px 0;
     border: none;
     border-radius: 50px;
+    cursor: pointer;
+}
+.quick-links
+{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40%;
+    font-size: 1.5em;
+    color: #89cff0;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid #89cff0;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.link-btn
+{
+    background-color: rgb(75, 75, 75);
+    color: #89cff0;
+    font-size: 1.5em;
+    border: 2px solid rgb(75, 75, 75);
+    border-radius: 50%;
+    padding: 20px 30px;
+    cursor: pointer;
+}
+.newlink-btn
+{
+    margin-left: 0.3em;
+    margin-right: 0.3em;
+    background-color: rgb(50, 50, 50);
+    color: #89cff0;
+    font-size: 1.5em;
+    border: 2px solid rgb(50, 50, 50);
+    border-radius: 50%;
+    padding: 20px 30px;
     cursor: pointer;
 }

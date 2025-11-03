@@ -1,17 +1,28 @@
-var seach = document.getElementById("search-bar");
-var button = document.getElementById("seach-btn");
+let searchBar = document.getElementById("search-bar");
+let searchButton = document.getElementById("seach-btn");
+let elem = document.getElementById("link-btn");
+let inputvalue;
 
-var inputvalue;
-var searchLogic = function() 
+
+let lol = function() 
 {
-    inputvalue = seach.value;
-    console.log(inputvalue);
-    inputvalue.replace(/ /g, '+');
-    window.open("https://www.youtube.com/results?search_query="+inputvalue).focus();
-
+            inputvalue = searchBar.value;
+            inputvalue.replace(/ /g, '+');
+            window.open("https://www.youtube.com/results?search_query="+inputvalue).focus();
+}
+let aNewLink = function()
+{
+    let linkName = prompt("Enter the name of the link:");
+    let linkURL = prompt("Enter the URL of the link:");
+    let newButton = document.createElement("button");
+    newButton.onclick = function() {window.open(linkURL).focus();};
+    newButton.className = "newlink-btn";
+    newButton.innerHTML = linkName;
+    document.getElementsByClassName("quick-links")[0].appendChild(newButton);
 }
 
-seach.addEventListener('keydown',(event) =>
-    {if (event.key === 'Enter'){searchLogic()}})
 
-button.onclick = searchLogic();
+elem.onclick = aNewLink;
+searchBar.addEventListener('keydown',(event) =>{if (event.key === 'Enter') lol();})
+searchButton.onclick = lol;
+

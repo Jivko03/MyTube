@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript HTML DOM</h2>
+<p>Add a new HTML Element.</p>
+<button id="addBtn">+</button>
+
+<div id="div1">
+<p id="p1">This is a paragraph.</p>
+<p id="p2">This is another paragraph.</p>
+</div>
+
+<script>
+
+let newx = 0;
+let addBtw = document.getElementById("addBtn");
+let myFunc = function(){
+newx++;
+const para = document.createElement("p");
+const node = document.createTextNode("This is new."+newx);
+para.appendChild(node);
+const element = document.getElementById("div1");
+element.appendChild(para);
+}
+addBtw.onclick = myFunc;
+
+</script>
+
+</body>
+</html>
